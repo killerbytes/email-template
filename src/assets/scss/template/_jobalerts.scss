@@ -14,7 +14,9 @@ center,
 th.large-12 center{
   min-width: initial;
 }
-
+h1,h2,h3,h4,h5{
+  hyphens: initial;
+}
 @media only screen and (max-width: $global-breakpoint) {
   table.body .columns{
     padding-left: 8px !important;
