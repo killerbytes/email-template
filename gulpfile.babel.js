@@ -128,12 +128,19 @@ function inliner(css) {
       preserveMediaQueries: true,
       removeLinkTags: false
     })
-    .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
+    .pipe($.replace, '<!-- <style> -->', `<style type="text/css">${mqCss}</style>`)
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
+
+
+
     .pipe($.htmlmin, {
       collapseWhitespace: false,
       minifyCSS: false
-    });
+    })
+    .pipe($.replace, '<br>', '<br/>')
+    .pipe($.replace, '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">', '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>')
+    .pipe($.replace, '<meta name="viewport" content="width=device-width">', '<meta name="viewport" content="width=device-width"/>')
+    .pipe($.replace, '<link rel="icon" type="image/x-icon" href="http://cdn.recruitnet.co/2.0/img/favicon.ico">', '<link rel="icon" type="image/x-icon" href="http://cdn.recruitnet.co/2.0/img/favicon.ico"/>')
 
   return pipe();
 }
