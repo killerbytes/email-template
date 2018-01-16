@@ -45,7 +45,7 @@ p{
 
 }
 .meta{
-  padding-right: 14px;
+  padding-right: 12px;
 }
 .company,
 .post-date{
@@ -76,7 +76,7 @@ p{
   // margin: 0;
   // text-align: center;
   td{
-    padding: 14px;
+    padding: 12px;
     font-size: 18px;
     font-weight: bold;
     color: #FFF;
@@ -85,11 +85,11 @@ p{
 
 .btn{
   display: block;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   .btn-content{
     border: 2px solid $primary-color;
     border-radius: 8px;
-    padding: 14px 0;
+    padding: 12px 0;
     margin: 0;
   }
   .btn-inner{
@@ -132,22 +132,18 @@ a.btn-width{
   //   text-align: center;
   // }
 }
+a.btn-upload{
+  font-size: 16px;
+  background-color: $primary-color;
+  color: #FFF;
+  border: 10px solid $primary-color;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 
-// table.button{
-//   margin: auto;
-//   td{
-//     text-align: center;
-//     width: 200px;
-//     background-color: $primary-color;
-//     padding: 10px 20px;
-//     border-radius: 10px;
-//     a{
-//       color: #FFF;
-//       font-size: 16px;
-//       font-weight: bold;
-//     }
-//   }
-// }
+}
+
 
 .menu{
   width: auto !important;
@@ -164,13 +160,29 @@ a.btn-width{
     border-bottom: 1px solid $border-color;
   }
   .meta, .image{
-    padding: 14px 0;
+    padding: 12px 0;
   }
   .meta{
-    padding-right: 14px;
+    padding-right: 12px;
   }
 
 }
+table.post-resume{
+  background-color: #e7f1fe;
+  strong{
+    font-size: 16px;
+    span{
+      color: #f60;
+      font-size: 20px;
+    }
+  }
+  .last{
+    padding-left: 0;
+    text-align: right;
+    vertical-align: middle;
+  }
+}
+
 table.suggestions{
   p.text-center{
     margin-top: 16px;
@@ -179,4 +191,12 @@ table.suggestions{
   >tbody>tr>td{
     border-top: 1px solid $border-color;
   }
+}
+
+.border-bottom{
+  border-bottom: 1px solid $border-color;
+}
+
+.pad{
+  padding: 12px;
 }

@@ -1,0 +1,99 @@
+
+td[align="center"],
+th[align="center"]{
+  text-align: center;
+}
+hr{
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+.post-date{
+  color: $light-gray;
+}
+.company,
+.post-date{
+  font-size: 12px;
+}
+
+.title{
+  background-color: $primary-color;
+  td{
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+  }
+}
+
+.job-title{
+  font-size: 14px;
+  a{
+    color: $anchor-color;
+    font-weight: bold;
+    line-height: 20px;
+    hyphens: none;
+    margin-bottom: 14px;
+  }
+  span.label{
+    font-size: 11px;
+    font-weight: bold;
+    background-color: $warning-color;
+    padding: 2px 4px;
+    border-radius: 3px;
+    vertical-align: top;
+  }
+
+}
+
+.list-item{
+  >td{
+    border-bottom: 1px solid $border-color;
+  }
+  .meta, .image{
+    padding: 10px 0;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.post-resume{
+  background-color: #ECF8FF;
+  border: 1px solid $border-color;
+  td, th{
+    padding: 14px;
+    color: #FFF;
+    vertical-align: middle;
+  }
+  a{
+    font-weight: bold;
+  }
+  img{
+    margin: auto;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.job-links{
+  // border: 1px solid $border-color;
+  // background-color: #EEEEEE;
+  text-transform: capitalize;
+  h6{
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.social-icons{
+  img{
+    display: inline;
+  }
+}
+
+.footer,
+.footer p{
+  background-color: #EEE;
+  font-size: 12px;
+}
