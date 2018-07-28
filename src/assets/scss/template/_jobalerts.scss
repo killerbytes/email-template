@@ -133,15 +133,24 @@ a.btn-width{
   // }
 }
 a.btn-upload{
+  width: 100px;
+  margin: auto;
   font-size: 16px;
   background-color: $primary-color;
   color: #FFF;
   border: 10px solid $primary-color;
+  border-radius: 10px;
   font-weight: bold;
   display: block;
   text-align: center;
   text-decoration: none;
 
+}
+a.text-default{
+  color: #000;
+}
+a.text-bold{
+  font-weight: bold;
 }
 
 
@@ -160,7 +169,7 @@ a.btn-upload{
     border-bottom: 1px solid $border-color;
   }
   .meta, .image{
-    padding: 12px 0;
+    padding: 8px 0;
   }
   .meta{
     padding-right: 12px;

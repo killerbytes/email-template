@@ -1,0 +1,243 @@
+---
+
+subject: ---{{txt_todaysjobs}}---
+country_url: ---{{country_url}}---
+email: ---{{email}}---
+signature: ---{{signature}}---
+txt_todaysjobs: ---{{txt_todaysjobs}}---
+url_encoded_query: ---{{url_encoded_query}}---
+url_encoded_location: ---{{url_encoded_location}}---
+txt_viewalljobs: ---{{txt_viewalljobs}}---
+txt_view_all: ---{{txt_view_all}}---
+txt_view_all_1: ---{{txt_view_all_1}}---
+txt_view_all_2: ---{{txt_view_all_2}}---
+txt_subscribemore: ---{{txt_subscribemore}}---
+txt_brought_to: ---{{txt_brought_to}}---
+txt_alert_by: ---{{txt_alert_by}}---
+txt_termsnconditions: ---{{txt_termsnconditions}}---
+txt_privacypolicy: ---{{txt_privacypolicy}}---
+txt_cancel: ---{{txt_cancel}}---
+suggest__suggestedSearch: ---{{suggest.suggestedSearch}}---
+suggest__urlRegional: ---{{suggest.urlRegional}}---
+suggest__txt_encoded_suggestion: ---{{suggest.txt_encoded_suggestion}}---
+suggest__url_encoded_location: ---{{suggest.url_encoded_location}}---
+job__permalink: ---{{job.permalink}}---
+job__txt_encoded_title: ---{{job.txt_encoded_title}}---
+job__txt_encoded_company: ---{{job.txt_encoded_company}}---
+job__txt_encoded_location: ---{{job.txt_encoded_location}}---
+job__txt_logourl: ---{{job.txt_logourl}}---
+job__freshness: ---{{job.freshness}}---
+
+
+---
+
+{{!--
+  subject: Today's job matches for you
+  country_url: http://recruit.net/
+  email: email@email.com
+  signature: signature
+  txt_todaysjobs: Today's job matches for you
+  url_encoded_query: xx
+  url_encoded_location: xx
+  txt_viewalljobs: View all job matches
+  txt_view_all: See matching jobs since
+  txt_view_all_1: yesterday
+  txt_view_all_2: past week
+  txt_subscribemore: Subscribe to similar alerts
+  txt_brought_to: This message was sent by
+  txt_alert_by: to
+  txt_termsnconditions: Terms and Conditions
+  txt_privacypolicy: Privacy Policy
+  txt_cancel: Cancel this alert
+  suggest__suggestedSearch: project management senior
+  suggest__urlRegional: xx
+  suggest__txt_encoded_suggestion: xx
+  suggest__url_encoded_location: xx
+  job__permalink: http://google.com
+  job__txt_encoded_title: Project Manager - COMMERCIAL fitout
+  job__txt_encoded_company: Vlocity, Inc
+  job__txt_encoded_location: Manila
+  job__txt_logourl: https://s3-ap-southeast-1.amazonaws.com/azd-temp/thumb_logo.jpg
+  job__freshness: 21 hours ago
+      --}}
+
+<container>
+
+  <!-- begin header -->
+    <spacer size="30"></spacer>
+    <table class="row" align="center">
+      <tr>
+        <td align="center">
+          <img src="http://prncdn-9c47.kxcdn.com/2.0/img/logo-phone@2x.png" alt="Recruit.net" class="text-center" width="250" style="width:100%; max-width:250px;" />
+        </td>
+      </tr>
+    </table>
+    <spacer size="30"></spacer>
+    <table class="row title" align="center">
+      <tr>
+        <td align="center">
+          {{ txt_todaysjobs }}
+        </td>
+      </tr>
+    </table>
+    <spacer size="10"></spacer>
+  <!-- end header -->
+
+
+  <!-- begin job list -->
+    <table class="row">
+      <tr>
+        <td class="small-12 large-12 columns first last">
+          <table>
+            <tbody>
+              <!-- begin list-item -->
+              <tr class="list-item">
+                <td>
+                  <table>
+                    <tr>
+                      <td class="meta">
+                        <span  class="job-title"><a href="{{ job__permalink }}">{{ job__txt_encoded_title }}</a> <span class="label">NEW</span></span>
+                        <p class="company"><a href="{{ job__permalink }}">{{ job__txt_encoded_company }} - {{ job__txt_encoded_location }}</a></p>
+                        <p class="post-date"><a href="{{ job__permalink }}">posted {{ job__freshness }}</a></p>
+                      </td>
+                      <td class="image" width="100">
+                        <div class="company-logo">
+                          <a href="{{ job__permalink }}">
+                            <img src="{{ job__txt_logourl }}" alt="company logo" class="float-center" />
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+              <!-- end list-item -->
+            </tbody>
+
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  <!-- end job list -->
+
+  <spacer size="20"></spacer>
+
+  <table class="row">
+    <tr>
+      <td class="small-12 large-12 columns first last">
+        <p class="text-center">
+          <a class="btn-width radius" href="{{ country_url }}search.html?query={{ url_encoded_query }}&location={{ url_encoded_location }}&utm_medium=email&utm_source=job_alert&utm_campaign=results_more_new_jobs">{{ txt_viewalljobs }}</a>
+        </p>
+        <spacer size="15"></spacer>
+        <p class="text-center">
+          {{ txt_view_all }} <a href="{{ country_url }}search.html?postdate=1&query={{ url_encoded_query }}&location={{ url_encoded_location }}&utm_medium=email&utm_source=job_alert&utm_campaign=results_yesterday">{{ txt_view_all_1 }}</a> - for <a href="{{ country_url }}search.html?postdate=7&query={{ url_encoded_query }}&location={{ url_encoded_location }}&utm_medium=email&utm_source=job_alert&utm_campaign=results_week">{{ txt_view_all_2 }}</a>
+        </p>      
+      </td>
+    </tr>
+  </table>
+
+  <spacer size="20"></spacer>
+  
+  <!-- begin post resume -->
+  <table class="row">
+    <tr>
+      <td class="small-12 large-12 columns first last">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <table class="post-resume">
+                  <tr>
+                    <td class="pad">
+                      <table>
+                        <tbody>
+                          <tr><td class="text-center"><strong><span>&raquo;</span> <a class="text-default text-bold" href="https://secure.recruit.net/recruit/candidate/newAccount.do?locale=en&source=email&utm_medium=email&utm_source=job_alert&utm_campaign=post_resume">Post your resume on Recruit.net</a></strong></td></tr>
+                          <tr><td class="text-center"><a class="text-default" href="https://secure.recruit.net/recruit/candidate/newAccount.do?locale=en&source=email&utm_medium=email&utm_source=job_alert&utm_campaign=post_resume">Let employers find you</a></td></tr>
+                          <tr>
+                            <td>
+                              <spacer size="10"></spacer>
+                              <p class="text-center">
+                                <a class="btn-upload" href="https://secure.recruit.net/recruit/candidate/newAccount.do?locale=en&source=email&utm_medium=email&utm_source=job_alert&utm_campaign=post_resume">Upload</a>
+                              </p>
+                            </td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>              
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <spacer size="10"></spacer>
+              </td>
+            </tr>
+                      
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+  <!-- end post resume -->
+  <spacer size="10"></spacer>
+
+  <!-- begin job links -->
+    <table class="row">
+      <tr>
+        <td class="small-12 large-12 columns first last">
+          <p class="text-center">
+            <strong>{{ txt_subscribemore }}:</strong>
+          </p>
+          <spacer size="15"></spacer>
+          <table class="suggestions">
+            <tbody>
+            <!-- begin suggestions -->
+            <tr>
+              <td>
+                <p class="text-center"><strong>{{ suggest__suggestedSearch }}</strong></p>
+                <p class="text-center">
+                  <a class="btn-width radius" href="{{ suggest__urlRegional }}search.html?jq={{ email }}&query={{ suggest__txt_encoded_suggestion }}&location={{ suggest__url_encoded_location }}&utm_source=job_alert&utm_medium=email&utm_campaign=results_similar">Subscribe</a>
+                </p>
+                <spacer size="10"></spacer>
+              </td>
+            </tr>
+            <!-- end suggestions -->          
+            
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  <!-- end job links -->
+
+  
+  <spacer size="20"></spacer>
+
+  <!-- begin footer -->
+    <table class="row">
+      <tr>
+        <td class="small-12 large-12 columns first last">
+          <p class="text-center small">
+            {{ txt_brought_to }} <a href="http://recruit.net">Recruit.net Ltd</a> {{ txt_alert_by }}: <br/><a href="mailto:{{ email }}">{{ email }}</a>. <br/>
+          </p>
+          <spacer size="15"></spacer>
+          <p class="text-center small">
+            &copy; Copyright 2017 Recruit.net. <br/><a href="{{ country_url }}tos.html">{{ txt_termsnconditions }}</a> | <a href="{{ country_url }}privacy.html">{{ txt_privacypolicy }}</a>
+          </p>
+          <spacer size="15"></spacer>
+          <p class="text-center small">
+            <a href="{{ country_url }}verify_email.html?cancel=cancel&id={{ signature }}&utm_source=job_alert&utm_medium=email&utm_campaign=cancel">{{ txt_cancel }}</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+  <!-- end footer -->
+  <spacer size="20"></spacer>
+
+</container>
